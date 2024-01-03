@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:wght@200;400;500;600;700&family=Poppins:wght@300&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(23, 120, 240);
+}
+
+.container {
+  background-color: aliceblue;
+  max-width: 700px;
+  width: 70%;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.wrapper {
+  border: 1px solid rgb(42, 40, 40);
+  border-radius: 7px;
+}
+
+.wrapper .text-input {
+  display: flex;
+  border-bottom: 1px solid #bbb;
+}
+
+.to-text {
+  border-left: 2px solid #bbb;
+  border-radius: 0px;
+}
+
+.wrapper .text-input textarea {
+  width: 100%;
+  height: 250px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  resize: none;
+}
+
+.text-input textarea.to-text {
+  border-left: 1px solid #bbb;
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper .text-input textarea {
+    font-size: 13px;
+    height: 150px;
+  }
+}
+
+.controls,
+li,
+.icons,
+.icons li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls li {
+  padding: 12px 15px;
+  list-style: none;
+}
+
+.controls .icons {
+  width: 38%;
+}
+
+.controls .row.from .icons {
+  border-right: 1px solid #bbb;
+  padding-right: 15px;
+}
+
+.controls .row.to .icons {
+  border-left: 1px solid #bbb;
+  padding-left: 15px;
+}
+
+.icons i {
+  color: #9f9f9f;
+  font-size: 14px;
+  cursor: pointer;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.row select {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+}
+
+.controls .exchange {
+  color: #9f9f9f;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 6px;
+  background-color: blue;
+  font-size: 14px;
+}
